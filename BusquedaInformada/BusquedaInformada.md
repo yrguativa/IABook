@@ -11,3 +11,10 @@ La función heurística h(n) depende  únicamente del nodod que se está analiza
 
 ## Búsqueda con vuelta atrás (Backtracking)
 Mejora la busqueda en profundidad usando una función heurística, lo hacemos al momento de validad si el nodo hijo empeora la situación y como no tiene sentido seguir explorando una rama por se **no completable**, o que hacemos es que dejamos de explorar y volvemos hacia atrás
+
+## Algoritmo A* (A estrella)
+Hace uso de una funcion heurística h(n) wue trata de estimar el coste desde el nodo n hasta el nodo objetivo, para reducir el alto precio que se puede presentar en la búsqueda de coste.
+La función de evaluación : Usa la suma del coste acumulador desde el nodo raíz mas el coste estimado hasta el nodo solución.
+```
+f(n) = g(n) + h(n)
+```
