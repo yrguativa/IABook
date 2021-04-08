@@ -31,7 +31,8 @@ def buscar_solucion_heuristica(nodo_inicial, solucion, visitados):
                     return sol
         return None
 
-
+# función heurística:
+# validad si el nodo hijo mejora respecto al padre en terminos de número de piezas mal colocadas
 def mejora(nodo_padre, nodo_hijo):
     calidad_padre = 0
     calidad_hijo = 0
