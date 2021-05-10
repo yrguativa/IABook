@@ -40,3 +40,5 @@ se va etiquedando cada nodo con la tupla *[distancia_acumulada, padre]* donde la
 1. Selecionamos el nodo no visitado con menor distancia acumulada.
 2. Sumamos la distancia acumulada con la distancia a los nodos adyacentes y los etiquetamos con *[distancia_acumulada, padre]*. En caso de que alguno de los nodos adyacentes esté ya etiquetado, nos quedamos con el de menor distancia acumulada.
 3. Marcamos el nodo actual como visitado y regremaos al paso 1.
+
+[Código](https://github.com/yrguativa/IABook/blob/master/BusquedaInformada/dijkstra.py)
