@@ -31,3 +31,12 @@ Son aquellos que utilizan una función heurística consistente en elegir la mejo
 
 > NOTA: Suelen usarse para generar soluciones iniciales.
 
+## El algoritmo de DIJKSTRA
+Es un algoritmo constructivo voraz capaz de encontrar el camino más corto desde un nodo de un grafo ponderado *(un grafo ponderado, valorado o con pesos es un grafo en el que las aristas tienen un valor o peso asociado)* al resto de nodos.
+
+se va etiquedando cada nodo con la tupla *[distancia_acumulada, padre]* donde la *distancia_acumulada* es la distancia mínima desde el nodo inicial y  *padre* es el nodo predecesor en el camino mínimo que une  el nodo incial con el que se esa calculando.
+
+### Pasos de implementacón del algoritmo
+1. Selecionamos el nodo no visitado con menor distancia acumulada.
+2. Sumamos la distancia acumulada con la distancia a los nodos adyacentes y los etiquetamos con *[distancia_acumulada, padre]*. En caso de que alguno de los nodos adyacentes esté ya etiquetado, nos quedamos con el de menor distancia acumulada.
+3. Marcamos el nodo actual como visitado y regremaos al paso 1.
